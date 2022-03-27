@@ -1,0 +1,61 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Info {
+  id          String    @id @default(uuid())
+  text        String
+  create_at   DateTime      @default(now())
+  update_at   DateTime      @updatedAt
+  getData     GetData[]
+
+  @@map("info")
+}
+
+model Task {
+  id          String    @id @default(uuid())
+  title       String    
+  check       Boolean   @default(false)
+  created_at  DateTime  @default(now())
+  update_at   DateTime  @updatedAt
+  GetData     GetData[]
+
+  @@map("task")
+}
+
+model User {
+  id          String    @id @default(uuid())
+  name        String    
+  email       String
+  password    String
+  admin       Boolean
+  created_at  DateTime  @default(now())
+  update_at   DateTime  @updatedAt
+  GetData     GetData[]
+
+  @@map("user")
+}
+
+model GetData {
+  id          String    @id @default(uuid())
+
+  Info        Info?     @relation(fields: [infoId], references: [id], onDelete: Cascade) 
+  infoId      String? 
+  Task        Task?     @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  taskId      String?
+  User        User?     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId      String?
+  admin       Boolean
+  created_at  DateTime  @default(now())
+  update_at   DateTime  @updatedAt
+
+  @@map("data_list")
+}
