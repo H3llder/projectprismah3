@@ -14,7 +14,7 @@ Link para Documentação:
 | yarn prisma init
 ```
 
-<p>ESTOU USANDO MYSQL, LOGO MINHAS CONFIGURAÇÕES, ESTARÃO BASEADAS NELE</p>
+<h3>ESTOU USANDO MYSQL, LOGO MINHAS CONFIGURAÇÕES, ESTARÃO BASEADAS NELE</h3>
 <p>Ex: DATABASE_URL="mysql://user:password@localhost:0000/db"</p>
 
 Após isso, criar em schema.prisma a estrura do banco;
