@@ -1,9 +1,10 @@
 # MKI - Aprendendo a usar o prisma para o TCC
 
 *Primeiros comandos*
+
 ```js
-<p>| yarn init -y</p>
-<p>| npm install prisma typescript ts-node @types/node --save-dev</p>
+| yarn init -y
+| npm install prisma typescript ts-node @types/node --save-dev
 ```
 
 *Após isso*
