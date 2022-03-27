@@ -1,4 +1,6 @@
-# MKI - Aprendendo a usar o prisma para o TCC
+# MKI - Aprendendo a usar o Prisma
+Link para Documentação:
+    >https://www.prisma.io/
 
 *Primeiros comandos*
 ```js
