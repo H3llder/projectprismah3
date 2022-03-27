@@ -1,10 +1,12 @@
 ## MKI - Aprendendo a usar o prisma para o TCC
 
 *Primeiros comandos*
+
 | yarn init -y
 | npm install prisma typescript ts-node @types/node --save-dev
 
 *Após isso*
+
 | yarn prisma
 | yarn prisma init
 
@@ -16,7 +18,9 @@ Após isso, criar em schema.prisma a estrura do banco;
 
 
 # Instalando Prisma Client
+
 | yarn add @prisma/client
 
 # Prisma Studio
+
 | yarn prisma studio
