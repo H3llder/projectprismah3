@@ -12,7 +12,7 @@
 | yarn prisma init
 ```
 
-<p style="color: tomato;">ESTOU USANDO MYSQL, LOGO MINHAS CONFIGURAÇÕES, ESTARÃO BASEADAS NELE</p>
+<p style="color: #00ff00;">ESTOU USANDO MYSQL, LOGO MINHAS CONFIGURAÇÕES, ESTARÃO BASEADAS NELE</p>
 <p>Ex: DATABASE_URL="mysql://user:password@localhost:0000/db"</p>
 
 Após isso, criar em schema.prisma a estrura do banco;
