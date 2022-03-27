@@ -1,26 +1,32 @@
 # MKI - Aprendendo a usar o prisma para o TCC
 
 *Primeiros comandos*
-
 ```js
 | yarn init -y
 | npm install prisma typescript ts-node @types/node --save-dev
 ```
 
 *Após isso*
-<p>| yarn prisma</p>
-<p>| yarn prisma init</p>
+```js
+| yarn prisma
+| yarn prisma init
+```
 
-
--- ESTOU USANDO MYSQL, LOGO MINHAS CONFIGURAÇÕES, ESTARÃO BASEADAS NELE
-Ex: DATABASE_URL="mysql://user:password@localhost:0000/db"
+<p style="color: tomato;">ESTOU USANDO MYSQL, LOGO MINHAS CONFIGURAÇÕES, ESTARÃO BASEADAS NELE</p>
+<p>Ex: DATABASE_URL="mysql://user:password@localhost:0000/db"</p>
 
 Após isso, criar em schema.prisma a estrura do banco;
-<p>| yarn prisma migrate dev</p>
+```js
+| yarn prisma migrate dev
+```
 
 
 ### Instalando Prisma Client
-<p>| yarn add @prisma/client</p>
+```js
+| yarn add @prisma/client
+```
 
 ### Prisma Studio
-<p>| yarn prisma studio</p>
+```js
+| yarn prisma studio
+```
