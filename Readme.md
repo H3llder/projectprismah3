@@ -1,12 +1,10 @@
 # MKI - Aprendendo a usar o prisma para o TCC
 
 *Primeiros comandos*
-<div style="background-color: #ccc; padding: 20px;">
-
+```js
 <p>| yarn init -y</p>
 <p>| npm install prisma typescript ts-node @types/node --save-dev</p>
-
-</div>
+```
 
 *Após isso*
 <p>| yarn prisma</p>
